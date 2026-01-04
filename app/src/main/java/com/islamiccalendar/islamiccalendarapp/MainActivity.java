@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText sunsetTimeInput;
     private Button submitDateButton;
     private Button submitTimeButton;
+    private TextView developerCredit;
 
     private static final int NOTIFICATION_PERMISSION_CODE = 100;
 
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         sunsetTimeInput = findViewById(R.id.sunsetTimeInput);
         submitDateButton = findViewById(R.id.submitDateButton);
         submitTimeButton = findViewById(R.id.submitTimeButton);
+        developerCredit = findViewById(R.id.developerCredit);
 
         // Check if first launch and request notification permission
         if (dateManager.isFirstLaunch()) {
@@ -69,6 +71,12 @@ public class MainActivity extends AppCompatActivity {
         // Setup button listeners
         submitDateButton.setOnClickListener(v -> handleDateSubmit());
         submitTimeButton.setOnClickListener(v -> handleTimeSubmit());
+        // Setup developer credit click listener
+        developerCredit.setOnClickListener(v -> {
+            // For now, just show a toast message
+            // Later you can replace this with: Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://your-portfolio-url.com"));
+            Toast.makeText(this, "Portfolio coming soon!", Toast.LENGTH_SHORT).show();
+        });
 
         // Schedule daily updates
         scheduleDailyUpdates();

@@ -144,5 +144,19 @@
                 android:layout_gravity="center"/>
         </LinearLayout>
 
+        <!-- Developer Footer -->
+        <TextView
+            android:id="@+id/developerCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developed by Uthman.Salyani"
+            android:textColor="#8899AA"
+            android:textSize="12sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="center"/>
+
     </LinearLayout>
 </ScrollView>
