@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a2332"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/islamic_calender"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Arabic Month Name -->
+        <TextView
+            android:id="@+id/arabicMonthName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rajab_arabic"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Day Number -->
+        <TextView
+            android:id="@+id/dayNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_ten"
+            android:textColor="#FFFFFF"
+            android:textSize="72sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Full Date Display -->
+        <TextView
+            android:id="@+id/fullDateDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rajab_full"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Set Hijri Date Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_hijri_date"
+                android:textColor="#1a2332"
+                android:textSize="16sp"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/hijriDateInput"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/dd_mm_yyyy"
+                android:textColorHint="#666666"
+                android:textColor="#1a2332"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:inputType="text"
+                android:background="@android:color/transparent"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="date"/>
+
+            <Button
+                android:id="@+id/submitDateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textColor="#1a2332"
+                android:backgroundTint="#FFFFFF"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <!-- Daily Update Time Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daily_update_sunset"
+                android:textColor="#1a2332"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_update_message"
+                android:textColor="#1a2332"
+                android:textSize="12sp"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/sunsetTimeInput"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/hh_mm"
+                android:textColorHint="#666666"
+                android:textColor="#1a2332"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:inputType="time"
+                android:background="@android:color/transparent"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="time"/>
+
+            <Button
+                android:id="@+id/submitTimeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textColor="#1a2332"
+                android:backgroundTint="#FFFFFF"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Islamic Calendar App</string>
+    <string name="islamic_calender">ISLAMIC CALENDER</string>
+    <string name="rajab_arabic">رَجَب</string>
+    <string name="day_ten">10</string>
+    <string name="rajab_full">RAJAB 15 1447 A.H</string>
+    <string name="set_hijri_date">Set Hijri Date:</string>
+    <string name="dd_mm_yyyy">DD MM YYYY</string>
+    <string name="submit">Submit</string>
+    <string name="daily_update_sunset">Daily Update Time (Sunset):</string>
+    <string name="auto_update_message">The date will automatically update at\nthis time each day</string>
+    <string name="hh_mm">HH:MM AM/PM</string>
+    <string name="todays_date">Today\'s Date is:</string>
+    <string name="assalamu_alaikum">السَّلَامُ عَلَيْكُمْ</string>
+</resources>
